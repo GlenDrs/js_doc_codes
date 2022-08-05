@@ -19,9 +19,12 @@ function otherButton(){
 <p> some JS variables or numbers <script>
 <p id="date-demo">...</p>
 <p id="slice-arr"> slicing arrays! </p><br/>
+<p id="slice-chain"> slicing chain! </p><br/>
 
+<p> some JS variables or numbers
+<script>
 	let x = 3; let y = 2; document.write(x**y) ;
-	</script>
+</script></p>
   <script> function openTheWindow(){
   	let x = 4; y = 3;
     window.alert(x**y+3);
@@ -53,9 +56,11 @@ document.getElementById("date-demo").innerHTML = Date();
 }
 
 let arr_elements = ["water", "earth", "fire", "wind"];
+let chaine = "water resist watch";
 
 function sliceArr(){
-	document.getElementById("slice-arr").innerHTML = arr_elements.slice(0,3);
+    document.getElementById("slice-arr").innerHTML = arr_elements.slice(0,3);
+    document.getElementById("slice-chain").innerHTML = chaine.slice(4, 11);
 
 }
 </script>
