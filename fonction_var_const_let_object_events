@@ -1,0 +1,57 @@
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+function otherButton(){
+	document.getElementById("second-demo").style.color ="red";
+}
+ 
+</script>
+</head>
+<body>
+
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+<p id="second-demo"> change color to red</p><br/>
+<p id="demo-obj"> It will be replaced by the object!!! </p> <br/>
+<p> some JS variables or numbers <script>
+	let x = 3; let y = 2; document.write(x**y) ;
+	</script>
+  <script> function openTheWindow(){
+  	let x = 4; y = 3;
+    window.alert(x**y+3);
+    }
+  </script>
+  <br/>
+  <script>
+  {
+    var z = 7;
+  }
+   
+  {
+    document.write(z);
+  }
+  </script><br/>
+  
+<script>
+{
+	const car = {type:"Ford", color:"white"};
+    car.color = "blue";
+    car.owner = "Glen";
+function mySecondFc(){
+	document.getElementById("demo-obj").innerHTML = "Hi mr " + car.owner + "your car's color is: " +car.color ;
+}
+}
+</script>
+ 
+
+<button type="button" onclick="myFunction()">Try it</button>
+<button type="button" onclick="otherButton(), myFunction()"> For changing color</button><br/>
+<button type="button" onclick="openTheWindow()"> see the powher!</button><br/>
+<button type="button" onclick="mySecondFc()"> Call the object</button>
+
+
+</body>
+</html>
