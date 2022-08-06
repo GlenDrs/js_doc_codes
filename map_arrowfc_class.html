@@ -7,6 +7,7 @@
 
 <p id="demo"></p><br/>
 <p id="demo2"></p>
+<p id="demo3"> Le meme mais avec arrow functio </p>
 
 <script>
 
@@ -19,6 +20,22 @@ function circleArea(radius) {
 let areas = primes.map(circleArea);
 
 document.getElementById("demo2").innerHTML = "The prime circles of the values: " + primes + " are: " + areas;
+    
+let circleArea2 = (radius) => Math.floor(Math.PI * radius * radius);
+let prim_cerc_arrow = primes.map(circleArea2);
+
+document.getElementById("demo3").innerHTML = "Prime cercles with arrow fc " + prim_cerc_arrow
+
+
+function rd_nb(){
+return Math.random()
+}
+let kot = rd_nb();
+
+let random_with_arrow = ()=> Math.random()
+let test_arrow = random_with_arrow()
+
+document.getElementById("rand_bn").innerHTML = "Random nb: " + kot + " The rand nb with array fc: " + test_arrow
 
 
 </script>
