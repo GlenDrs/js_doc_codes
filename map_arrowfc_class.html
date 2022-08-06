@@ -8,6 +8,8 @@
 <p id="demo"></p><br/>
 <p id="demo2"></p>
 <p id="demo3"> Le meme mais avec arrow functio </p>
+<p id="rand_bn"></p>
+<p id="demo4"></p>
 
 <script>
 
@@ -25,6 +27,23 @@ let circleArea2 = (radius) => Math.floor(Math.PI * radius * radius);
 let prim_cerc_arrow = primes.map(circleArea2);
 
 document.getElementById("demo3").innerHTML = "Prime cercles with arrow fc " + prim_cerc_arrow
+    
+<script>
+// 			CLASS
+
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+const car1 = new Car("Ford ka",2002);
+const car2 = new Car("Fiat Panda", 2006);
+
+document.getElementById("demo4").innerHTML = "whe have two cars: " + car1.name + "et " + car2.name + ". Their years of production are: " + car1.year + " et " + car2.year
+
+</script>
 
 
 function rd_nb(){
